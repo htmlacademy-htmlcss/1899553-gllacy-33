@@ -35,7 +35,7 @@
             </li>
             <li class="navigation-item">
               <a class="navigation-link" href="#">
-                <span class="visually-hidden">Корзина</span>
+                <span class="visually-hidden">2 товара</span>
               </a>
             </li>
           </ul>
@@ -59,33 +59,33 @@
             <section class="catalog-products"><!--начало фильтрация-->
                 <h2 class="visually-hidden">Список товаров с фильтрами</h2>
                 <form class="catalog-filter" action="https://echo.htmlacademy.ru/" method="get">
-                    <legend class="catalog-filter-title">Сортировка:</legend><!--начало сортировка по-->
+                    <label class="catalog-filter-title">Сортировка:</label><!--начало сортировка по-->
                     <select class="select-control" aria-label="Сортировка">
                         <option value="popular">по популярности</option>
                         <option value="cheap">по возрастанию</option>
                         <option value="expensive">по убыванию</option>
                     </select><!--завершение сортировка по-->
-                    <legend class="catalog-filter-title">Цена: 100 ₽ – 500 ₽</legend><!--начало ползунок цена-->
+                    <label class="catalog-filter-title">Цена: 100 ₽ – 500 ₽</label><!--начало ползунок цена-->
                     <div class="price"><input type="range" min="100₽" max="500₽"class="slider">
                     </div><!--завершение ползунок цена-->
-                    <fieldset class="catalog-filter-group"><!--начало блок жирность-->
-                        <legend class="catalog-filter-title">Жирность:</legend>
+                    <section class="catalog-filter-group"><!--начало блок жирность-->
+                        <label class="catalog-filter-title">Жирность:</label>
                         <label class="control">
-                            <input class="control-input" type="checkbox" name="0%">
+                            <input class="control-input" type="checkbox" name="fat-content" value="0%">
                             0%
                         </label>
-                        <label class="control"><input class="control-input" type="checkbox" name="до 10%" checked>
+                        <label class="control"><input class="control-input" type="checkbox" name="fat-content" value="до 10%"checked>
                             до 10%
                         </label>
-                        <label class="control"><input class="control-input" type="checkbox" name="до 30%">
+                        <label class="control"><input class="control-input" type="checkbox" name="fat-content" value="до 30%">
                             до 30%
                         </label>
-                        <label class="control"><input class="control-input" type="checkbox" name="свыше 30%">
+                        <label class="control"><input class="control-input" type="checkbox" name="fat-content" value="свыше 30%">
                             свыше 30%
                         </label>
-                    </fieldset><!--завершение блок жирность-->
-                    <fieldset class="catalog-filter-group"><!--начало блок наполнители-->
-                        <legend class="catalog-filter-title">Наполнители:</legend>
+                    </section>t><!--завершение блок жирность-->
+                    <section class="catalog-filter-group"><!--начало блок наполнители-->
+                        <label class="catalog-filter-title">Наполнители:</label>
                         <label class="control">
                             <input class="control-input" type="checkbox" name="шоколадные" checked>
                             шоколадные
@@ -101,7 +101,7 @@
                         </label><label class="control"><input class="control-input" type="checkbox" name="джемы">
                             джемы
                         </label>
-                    </fieldset><!--завершение блок наполнители-->
+                    </section><!--завершение блок наполнители-->
                     <button class="button" type="submit">Применить:</button>
                 </form>
                 <ul class="product-list"><!--начало товары-->
@@ -112,7 +112,7 @@
                             <p class="product-card-title">Сливочное мороженое с малиновым джемом</p>
                         </a>
                         <b class="product-card-price">310 ₽/кг</b>
-                        <a class="product-card-button button" href="#">Купить</a>
+                        <a class="product-card-button button" href="#">Добавить в корзину</a>
                     </li>
                     <li class="product-card">
                         <a class="product-card-link" href="#">
@@ -121,7 +121,7 @@
                             <p class="product-card-title">Фисташковый пломбир с кусочками шоколада</p>
                         </a>
                         <b class="product-card-price">340 ₽/кг</b>
-                        <a class="product-card-button button" href="#">Купить</a>
+                        <a class="product-card-button button" href="#">Добавить в корзину</a>
                     </li>
                     <li class="product-card">
                         <a class="product-card-link" href="#">
@@ -130,7 +130,7 @@
                             <p class="product-card-title">Крем-брюле с черничным джемом</p>
                         </a>
                         <b class="product-card-price">330 ₽/кг</b>
-                        <a class="product-card-button button" href="#">Купить</a>
+                        <a class="product-card-button button" href="#">Добавить в корзину</a>
                     </li>
                     <li class="product-card">
                         <a class="product-card-link" href="#">
@@ -139,7 +139,7 @@
                             <p class="product-card-title">Ванильный пломбир со сладкой посыпкой</p>
                         </a>
                         <b class="product-card-price">320 ₽/кг</b>
-                        <a class="product-card-button button" href="#">Купить</a>
+                        <a class="product-card-button button" href="#">Добавить в корзину</a>
                     </li>
                     <li class="product-card">
                         <a class="product-card-link" href="#">
@@ -148,7 +148,7 @@
                             <p class="product-card-title">Сливочное мороженое с ежевичным джемом</p>
                         </a>
                         <b class="product-card-price">330 ₽/кг</b>
-                        <a class="product-card-button button" href="#">Купить</a>
+                        <a class="product-card-button button" href="#">Добавить в корзину</a>
                     </li>
                     <li class="product-card">
                         <a class="product-card-link" href="#">
@@ -157,7 +157,7 @@
                             <p class="product-card-title">Сливочный пломбир с банановым вкусом</p>
                         </a>
                         <b class="product-card-price">340 ₽/кг</b>
-                        <a class="product-card-button button" href="#">Купить</a>
+                        <a class="product-card-button button" href="#">Добавить в корзину</a>
                     </li>
                     <li class="product-card">
                         <a class="product-card-link" href="#">
@@ -166,7 +166,7 @@
                             <p class="product-card-title">Классический шоколадный пломбир</p>
                         </a>
                         <b class="product-card-price">270 ₽/кг</b>
-                        <a class="product-card-button button" href="#">Купить</a>
+                        <a class="product-card-button button" href="#">Добавить в корзину</a>
                     </li>
                     <li class="product-card">
                         <a class="product-card-link" href="#">
@@ -175,7 +175,7 @@
                             <p class="product-card-title">Сливочный пломбир с клубничным вкусом</p>
                         </a>
                         <b class="product-card-price">300 ₽/кг</b>
-                        <a class="product-card-button button" href="#">Купить</a>
+                        <a class="product-card-button button" href="#">Добавить в корзину</a>
                     </li>
                     <li class="product-card">
                         <a class="product-card-link" href="#">
@@ -184,7 +184,7 @@
                             <p class="product-card-title">Освежающий лимонный сорбет</p>
                         </a>
                         <b class="product-card-price">310 ₽/кг</b>
-                        <a class="product-card-button button" href="#">Купить</a>
+                        <a class="product-card-button button" href="#">Добавить в корзину</a>
                     </li>
                     <li class="product-card">
                         <a class="product-card-link" href="#">
@@ -193,7 +193,7 @@
                             <p class="product-card-title">Сливочный пломбир с ментоловым сиропом</p>
                         </a>
                         <b class="product-card-price">320 ₽/кг</b>
-                        <a class="product-card-button button" href="#">Купить</a>
+                        <a class="product-card-button button" href="#">Добавить в корзину</a>
                     </li>
                     <li class="product-card">
                         <a class="product-card-link" href="#">
@@ -202,7 +202,7 @@
                             <p class="product-card-title">Фисташковый пломбир с шоколадным сиропом</p>
                         </a>
                         <b class="product-card-price">360 ₽/кг</b>
-                        <a class="product-card-button button" href="#">Купить</a>
+                        <a class="product-card-button button" href="#">Добавить в корзину</a>
                     </li>
                     <li class="product-card">
                         <a class="product-card-link" href="#">
@@ -211,7 +211,7 @@
                             <p class="product-card-title">Классическое крем-брюле </p>
                         </a>
                         <b class="product-card-price">280 ₽/кг</b>
-                        <a class="product-card-button button" href="#">Купить</a>
+                        <a class="product-card-button button" href="#">Добавить в корзину</a>
                     </li>
                 </ul><!--завершение товары-->
                 <button class="button pagination-show-more" type="button">Показать ещё</button><!--начало сраницы-->
