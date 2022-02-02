@@ -1,0 +1,8 @@
+body {
+    background-color:#FEAFC3;
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 400;
+    src: url("fonts/inter-400.woff2") format("woff2");
+    font-display: swap;
+}
