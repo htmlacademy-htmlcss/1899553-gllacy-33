@@ -1,0 +1,206 @@
+@font-face {
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 400;
+    src: url("fonts/inter-400.woff2") format("woff2");
+    font-display: swap;
+}
+@font-face {
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 700;
+    src: url("fonts/inter-700.woff2") format("woff2");
+    font-display: swap;
+}
+@font-face {
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 900;
+    src: url("fonts/inter-900.woff2") format("woff2");
+    font-display: swap;
+}
+body {
+    font-family: "Inter", sans-serif;
+    font-size: 16px;
+    line-height: 22px;
+    background-color: #FEAFC3;
+    color: #2D3440;
+  }
+  /* Pages */
+.navigation-link {
+    font-family: "Inter", sans-serif;
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: 400;
+    text-align: left;
+    text-decoration: none;
+    background-color: #FEAFC3;
+    color: inherit
+}
+
+.slide {
+    background-repeat: no-repeat;
+    background-image: url("/images/base-pink.png");
+    background-size: "312px, 312px";
+}
+.name-ice{
+    font-family: "Inter", sans-serif;
+    font-size: 36px;
+    line-height: 46px, 106%;
+    font-weight: 900;
+    font-style: black;
+    text-align: left;
+    vertical-align: top;
+}
+.gifts {
+    background-repeat: no-repeat;
+    background-image: 
+    url("/images/base-dark-pink.png"), 
+    url("/images/raspberry.png");
+    background-size: "570px, 268px";
+}
+.product {
+    font-family: "Inter", sans-serif;
+    font-size: 32px;
+    line-height: 46px,119%;
+    font-weight: 900;
+    font-style: black;
+    text-align: center;
+    vertical-align: top;
+}
+.product-card-title {
+    font-family: "Inter", sans-serif;
+    font-size: 20px;
+    line-height: 24px,99%;
+    font-weight: 900;
+    font-style: bold;
+    text-align: center;
+    vertical-align: top;
+    text-decoration: none;
+}
+.product-card-image {
+    background-repeat: no-repeat;
+    background-image: url("/images/base-white.png");
+    background-size: "270px, 281px";
+}
+.advantages{
+    background-repeat: no-repeat;
+    background-image: url("/images/pattern-waffle.png");
+    background-size: "1170px, 480px";
+}
+.advantages h2{
+    font-family: "Inter", sans-serif;
+    font-size: 32px;
+    line-height: 46px, 119%;
+    font-weight: 900;
+    font-style: black;
+    text-align: center;
+    vertical-align: top;
+}
+.advantages-about-left{
+    font-family: "Inter", sans-serif;
+    font-size: 16px;
+    line-height: 22px, 114%;
+    font-weight: 400;
+    font-style: regular;
+    text-align: left;
+    vertical-align: top;
+}
+.advantages-about-right{
+    font-family: "Inter", sans-serif;
+    font-size: 16px;
+    line-height: 22px, 114%;
+    font-weight: 400;
+    font-style: regular;
+    text-align: right;
+    vertical-align: top;
+}
+.new-post {
+    background-image: url("/images/new-post.png");
+    width: 570px;
+    height: 220px;
+    background-repeat: no-repeat;
+}
+.new-post h3{
+    font-family: "Inter", sans-serif;
+    font-size: 24px;
+    line-height: 30px, 103%;
+    font-weight: 700;
+    font-style: bold;
+    text-align: left;
+    vertical-align: top;
+}
+.new-post p{
+    font-family: "Inter", sans-serif;
+    font-size: 16px;
+    line-height: 20px, 103%;
+    font-weight: 400;
+    font-style: regular;
+    text-align: left;
+    vertical-align: top;
+}
+.mailing-list{
+    background-image: url("/images/mail.png");
+    width: 570px;
+    height: 220px;
+    background-repeat: no-repeat;
+}
+.mailing-list{
+    font-family: "Inter", sans-serif;
+    font-size: 16px;
+    line-height: 22px, 114%;
+    font-weight: 400;
+    font-style: regular;
+    text-align: left;
+    vertical-align: top;
+}
+.order{
+    background-image: url("/images/background-delivery.png");
+    width: 1170px;
+    height: 534px;
+    background-repeat: no-repeat;
+}
+.appointment-form{
+    font-family: "Inter", sans-serif;
+    font-size: 16px;
+    line-height: 22px, 114%;
+    font-weight: 400;
+    font-style: regular;
+    text-align: left;
+    vertical-align: top;
+}
+.contacts{
+    background-image: url("/images/background-contacts.png");
+    width: 1170px;
+    height: 492px;
+    background-repeat: no-repeat;
+}
+.contacts{
+    font-family: "Inter", sans-serif;
+    font-size: 16px;
+    line-height: 22px, 114%;
+    font-weight: 400;
+    font-style: regular;
+    text-align: left;
+    vertical-align: top;
+}
+.contacts-address{
+    font-family: "Inter", sans-serif;
+    font-size: 20px;
+    line-height: 24px, 99%;
+    font-weight: 700;
+    font-style: bold;
+    text-align: left;
+    vertical-align: top;
+}
+.footer-info{
+font-family: "Inter", sans-serif;
+font-size: 14px;
+line-height: 20px, 118%;
+font-weight: 400;
+text-align: left;
+vertical-align: top;
+text-decoration: none;
+background-color: #FEAFC3;
+color: inherit;
+}
