@@ -1,8 +1,511 @@
-body {
-    background-color:#FEAFC3;
+@font-face {
     font-family: "Inter";
     font-style: normal;
     font-weight: 400;
     src: url("fonts/inter-400.woff2") format("woff2");
     font-display: swap;
+}
+@font-face {
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 700;
+    src: url("fonts/inter-700.woff2") format("woff2");
+    font-display: swap;
+}
+@font-face {
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 900;
+    src: url("fonts/inter-900.woff2") format("woff2");
+    font-display: swap;
+}
+body {
+    font-family: "Inter", sans-serif;
+    font-size: 16px;
+    line-height: 22px;
+    font-weight: 400;
+    background-color: #FEAFC3;/*возможно стоит прописать отдельно в body-pink*/
+    color: #2D3440;
+  }
+  /* Pages */
+.navigation-link {
+    font-family: "Inter", sans-serif;
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: 400;
+    font-style: normal;
+    text-align: left;
+    text-decoration: none;
+    background-color: #FEAFC3;
+    color: #2D3440;
+}
+.navigation-phone{
+    font-family: "Inter", sans-serif;
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: 700;
+    font-style: normal;
+    text-align: left;
+    text-decoration: none;
+    background-color: #FEAFC3;
+    color: #2D3440;
+}
+.navigation-link-ctlg{
+    font-family: "Inter", sans-serif;
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: 400;
+    font-style: normal;
+    text-align: left;
+    text-decoration: none;
+    background-color: #FF4A78;
+    background-repeat: no-repeat;
+    background-size: 95px, 36px;
+    color: #FCFCFC;
+    border-radius: 26px;
+}
+.btn-search{
+    background-color: #FCFCFC;
+    border-radius: 50%;
+    height: 32px;
+    width: 32px;
+}
+.btn{
+    font-family: "Inter", sans-serif;
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 400;
+    font-style: regular;
+    text-align: left;
+    text-decoration: none;
+    background-color: #FCFCFC;
+    height: 32px;
+    width: 92px;
+    color: #2D3440;
+    border-radius: 26px;
+}
+.slide {
+    background-repeat: no-repeat;
+    background-color: #FFCBD8;
+    border-radius: 50%;
+    height: 312px;
+    width: 312px;
+}
+.name-ice-title{
+    font-family: "Inter", sans-serif;
+    font-size: 36px;
+    line-height: 46px;
+    font-weight: 900;
+    font-style: black;
+    text-decoration: none;
+    text-align: left;
+    vertical-align: top;
+    color: #2D3440;
+}
+.name-ice-description{
+    font-family: "Inter", sans-serif;
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: 400;
+    font-style: regular;
+    text-align: left;
+    vertical-align: top;
+    color: #2D3440;
+}
+.gifts-title{
+    font-family: "Inter", sans-serif;
+    font-size: 32px;
+    line-height: 46px;
+    font-weight: 900;
+    font-style: black;
+    text-align: center;
+    vertical-align: top;
+    color: #2D3440;
+}
+.gifts-part{
+    width: 570px;
+    height: 268px;
+    background-color: #FF7799;
+    border-radius: 16px;
+    text-align-last: left;
+}
+.gifts-part:first-child{
+    background-image: url("/images/raspberry.png");
+    background-repeat: no-repeat;
+    background-position: 374px 28px;
+}
+.gifts-part:last-child{
+    background-image: url("/images/marshmallow.png");
+    background-repeat: no-repeat;
+    background-position: 331px 19px;
+}
+.gifts-title-title{
+    font-family: "Inter", sans-serif;
+    font-size: 24px;
+    line-height: 30px;
+    font-weight: 700;
+    font-style: normal;
+    text-align: left;
+    vertical-align: top;
+    color: #2D3440;
+}
+.btn-gifts{
+    font-family: "Inter", sans-serif;
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: 700;
+    font-style: normal;
+    text-align: center;
+    vertical-align: top;
+    text-decoration: none;
+    color: #2D3440;
+    background-color: #FCFCFC;
+    border-radius: 26px;
+}
+.gifts-description{
+    font-family: "Inter", sans-serif;
+    font-size: 16px;
+    line-height: 22px;
+    font-weight: 400;
+    font-style: normal;
+    text-align: left;
+    vertical-align: top;
+    color: #2D3440;
+}
+
+.product-title{
+    font-family: "Inter", sans-serif;
+    font-size: 32px;
+    line-height: 46px;
+    font-weight: 900;
+    font-style: black;
+    text-align: center;
+    vertical-align: top;
+    color: #2D3440;
+}
+.product-card{
+    width: 270px;
+    height: 281px;    
+    background-color: #FCFCFC;
+    border-radius: 8px;
+    text-align: center;
+}
+.product-card-link{
+    text-decoration: none
+}
+.product-card-title {
+    font-family: "Inter", sans-serif;
+    font-size: 20px;
+    line-height: 24px;
+    font-weight: 700;
+    font-style: normal;
+    text-align: center;
+    vertical-align: top;
+    color: #2D3440;
+}
+
+.product-card-description{
+    font-family: "Inter", sans-serif;
+    font-size: 16px;
+    line-height: 22px;
+    font-weight: 400;
+    font-style: bold;
+    text-align: center;
+    vertical-align: top;
+    text-decoration: none;
+    color: #565C66;
+}
+.product-card-price{
+    font-family: "Inter", sans-serif;
+    font-size: 20px;
+    line-height: 24px;
+    font-weight: 700;
+    font-style: bold;
+    text-align: left;
+    vertical-align: top;
+    text-decoration: none;
+}
+.product-card-button{
+    width: 32px;
+    height: 32px;    
+    background-color: #FF2F64;
+    border-radius: 26px;
+}
+.advantages{
+    background-repeat: no-repeat;
+    background-image: url("/images/pattern-waffle.png");
+    border-radius: 16px;
+}
+.about_advantages {
+    background-color: #FCFCFC;
+    border-radius: 16px;
+    width: 1122px;
+    height: 432px;
+}
+.advantages-title{
+    font-family: "Inter", sans-serif;
+    font-size: 32px;
+    line-height: 46px;
+    font-weight: 900;
+    font-style: black;
+    text-align: center;
+    vertical-align: top;
+}
+.advantages-point{
+    font-family: "Inter", sans-serif;
+    font-size: 16px;
+    line-height: 22px;
+    font-weight: 400;
+    font-style: normal;
+    text-align: center;
+    vertical-align: top;
+    text-decoration: none;
+    color: #565C66;
+}
+.new-post {
+    background-image: url("/images/new-post.png");
+    width: 570px;
+    height: 220px;
+    background-repeat: no-repeat;
+}
+.new-post-text{
+    font-family: "Inter", sans-serif;
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: 400;
+    font-style: regular;
+    text-align: left;
+    vertical-align: top;
+    color: #565C66;
+}
+.new-post-link{
+    font-family: "Inter", sans-serif;
+    font-size: 24px;
+    line-height: 30px;
+    font-weight: 700;
+    font-style: bold;
+    text-align: left;
+    vertical-align: top;
+    color: #2D3440;
+}
+.mailing{
+    background-image: url("/images/mail.png");
+    width: 570px;
+    height: 220px;
+    background-repeat: no-repeat;
+    border-radius: 16px;
+}
+.mailing-list{
+    background-color: #FCFCFC;
+    border-radius: 16px;
+    width: 558px;
+    height: 208px;
+}
+.about-subcription{
+    font-family: "Inter", sans-serif;
+    font-size: 16px;
+    line-height: 22px;
+    font-weight: 400;
+    font-style: regular;
+    text-align: left;
+    vertical-align: top;
+    background-color: #FCFCFC;
+    width: 558px;
+    height: 208px;
+    color: #565C66;
+}
+.dilevery{
+    background-image: url("/images/background-delivery.png");
+    width: 1170px;
+    height: 534px;
+    background-repeat: no-repeat;
+    border-radius: 16px;
+}
+.dilevery-title{
+    font-family: "Inter", sans-serif;
+    font-size: 32px;
+    line-height: 46px;
+    font-weight: 900;
+    font-style: black;
+    text-align: left;
+    vertical-align: top;
+}
+.dilevery-text{
+    font-family: "Inter", sans-serif;
+    font-size: 16px;
+    line-height: 22px;
+    font-weight: 400;
+    font-style: regular;
+    text-align: left;
+    vertical-align: top;
+}
+.dilevery-form{
+    background: #FCFCFC;
+    border-radius: 8px;
+    width: 500px;
+    height: 406px;
+}
+.delevery-info{
+    font-family: "Inter", sans-serif;
+    font-size: 16px;
+    line-height: 22px;
+    font-weight: 400;
+    font-style: regular;
+    text-align: left;
+    vertical-align: top;
+}
+.delevery-form-name{
+    font-family: "Inter", sans-serif;
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: 700;
+    font-style: normal;
+    text-align: left;
+    vertical-align: top;
+    color: #2D3440;
+}
+.contacts{
+    background-image: url("/images/background-contacts.png");
+    width: 1170px;
+    height: 492px;
+    background-repeat: no-repeat;
+    border-radius: 16px;
+}
+.contacts-inner{
+    width: 343px;
+    height: 364px;
+    background: #FCFCFC;
+    border-radius: 8px;
+}
+.contacts-text{
+    font-family: "Inter", sans-serif;
+    font-size: 16px;
+    line-height: 22px;
+    font-weight: 400;
+    font-style: regular;
+    text-align: left;
+    vertical-align: top;
+}
+.contacts-address{
+    font-family: "Inter", sans-serif;
+    font-size: 20px;
+    line-height: 24px;
+    font-weight: 700;
+    font-style: bold;
+    text-align: left;
+    vertical-align: top;
+}
+.contacts-phone{
+    font-family: "Inter", sans-serif;
+    font-size: 20px;
+    line-height: 24px;
+    font-weight: 700;
+    font-style: bold;
+    text-align: left;
+    vertical-align: top;
+    text-decoration: none;
+    color: #2D3440
+}
+.contacts-time{
+    font-family: "Inter", sans-serif;
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 400;
+    font-style: regular;
+    text-align: left;
+    vertical-align: top;
+}
+.button-feedback{
+    background-color: #FF2F64;
+    width: 250px;
+    height: 46px;
+    border-radius: 26px;
+    color: #FCFCFC;
+    text-decoration: none;
+}
+
+.footer-info-provider{
+    font-family: "Inter", sans-serif;
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 700;
+    font-style: bold;
+    text-align: left;
+    vertical-align: top;
+    color: #2D3440;
+    text-decoration: none;
+}
+.footer-info-link{
+    font-family: "Inter", sans-serif;
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 400;
+    font-style: regular;
+    text-align: left;
+    vertical-align: top;
+    color: #2D3440;
+    text-decoration: none;
+}
+.about-text{
+    font-family: "Inter", sans-serif;
+    font-size: 12px;
+    line-height: 16px;
+    font-weight: 400;
+    font-style: regular;
+    text-align: left;
+    vertical-align: top;
+    color: #2D3440;
+}
+.htmlacademy-link{
+    font-family: "Inter", sans-serif;
+    font-size: 12px;
+    line-height: 16px;
+    font-weight: 400;
+    font-style: regular;
+    text-align: left;
+    vertical-align: top;
+    color: #2D3440;
+}
+/*CATALOG.HTML*/
+.breadcrumbs-link{
+    font-family: "Inter", sans-serif;
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 700;
+    font-style: normal;
+    text-align: left;
+    vertical-align: top;
+    color: #2D3440;
+}
+.inner-header-title{
+    font-family: "Inter", sans-serif;
+    font-size: 32px;
+    line-height: 46px;
+    font-weight: 900;
+    font-style: normal;
+    text-align: left;
+    vertical-align: top;
+    color: #2D3440;
+}
+.catalog-filter-title{
+    font-family: "Inter", sans-serif;
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 400;
+    font-style: regular;
+    text-align: left;
+    vertical-align: top;
+    color: #2D3440;
+}
+.control{
+    font-family: "Inter", sans-serif;
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 400;
+    font-style: regular;
+    text-align: left;
+    vertical-align: top;
+    color: #2D3440;
+    background-color: #FCFCFC;
+    border-radius: 20px;
 }
