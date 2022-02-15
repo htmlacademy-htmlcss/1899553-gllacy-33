@@ -19,15 +19,70 @@
     src: url("fonts/inter-900.woff2") format("woff2");
     font-display: swap;
 }
+html {
+    height: 100%;
+}
 body {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
     font-family: "Inter", sans-serif;
     font-size: 16px;
     line-height: 22px;
     font-weight: 400;
-    background-color: #FEAFC3;/*возможно стоит прописать отдельно в body-pink*/
-    color: #2D3440;
-  }
-  /* Pages */
+    background-color: #FEAFC3;
+    color: #2D3440;    
+}
+
+.main-container {
+    flex-grow: 1;
+}
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+  /* hader*/
+ 
+.page-header{
+    height: 56px;
+    padding-top: 24px;
+    padding-bottom: 24px;
+    
+}
+.navigation{
+    display: flex; 
+    justify-content: space-between;
+}
+.general-layout {
+    margin: 0 auto 0 auto;
+    width: 1170px;
+}
+.navigation-site {
+    display: flex;
+}
+.logo{
+    display: block;
+    margin-right: 16px;
+    padding: 24px 24px;
+}
+.navigation-list {
+    flex-wrap: wrap;
+    align-items: center;
+    margin: 0;
+    padding: 34px 34px;
+    width: 400px;
+    
+}
+.navigation-item{
+    list-style-type: none;
+}
 .navigation-link {
     font-family: "Inter", sans-serif;
     font-size: 16px;
@@ -38,17 +93,7 @@ body {
     text-decoration: none;
     background-color: #FEAFC3;
     color: #2D3440;
-}
-.navigation-phone{
-    font-family: "Inter", sans-serif;
-    font-size: 16px;
-    line-height: 20px;
-    font-weight: 700;
-    font-style: normal;
-    text-align: left;
-    text-decoration: none;
-    background-color: #FEAFC3;
-    color: #2D3440;
+    padding: 8px 16px 8px 16px;
 }
 .navigation-link-ctlg{
     font-family: "Inter", sans-serif;
@@ -64,13 +109,28 @@ body {
     color: #FCFCFC;
     border-radius: 26px;
 }
-.btn-search{
-    background-color: #FCFCFC;
-    border-radius: 50%;
-    height: 32px;
-    width: 32px;
+.navigation-for-user{
+    align-items: center;
 }
-.btn{
+.navigation-phone{
+    font-family: "Inter", sans-serif;
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: 700;
+    font-style: normal;
+    text-align: left;
+    text-decoration: none;
+    background-color: #FEAFC3;
+    color: #2D3440;
+    margin-right: 8px;
+    padding: 42px 0px 42px 0;
+}
+.btn-search{
+    background-color: rgba(252, 252, 252, 0.3);
+    border-radius: 50%;
+    padding: 8px;
+}
+.btn-enter{
     font-family: "Inter", sans-serif;
     font-size: 14px;
     line-height: 20px;
@@ -78,18 +138,35 @@ body {
     font-style: regular;
     text-align: left;
     text-decoration: none;
-    background-color: #FCFCFC;
-    height: 32px;
-    width: 92px;
     color: #2D3440;
     border-radius: 26px;
+    background-color: rgba(252, 252, 252, 0.3);
+    padding: 6px 18px 6px 40px;
 }
-.slide {
-    background-repeat: no-repeat;
-    background-color: #FFCBD8;
-    border-radius: 50%;
-    height: 312px;
-    width: 312px;
+.btn-bascket{
+    font-family: "Inter", sans-serif;
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 400;
+    font-style: regular;
+    text-align: left;
+    text-decoration: none;
+    color: #2D3440;
+    border-radius: 26px;
+    background-color: rgba(252, 252, 252, 0.3);
+    padding: 6px 16px 6px 40px;
+}
+/*pages*/
+.gallery{
+    margin-bottom: 80px;
+    width: 1170px;
+}
+.slide{
+    width: 873px;
+    position: relative;
+    padding: 21px 0 26px 70px;
+    display: flex;
+    flex-wrap: wrap;
 }
 .name-ice-title{
     font-family: "Inter", sans-serif;
@@ -101,6 +178,8 @@ body {
     text-align: left;
     vertical-align: top;
     color: #2D3440;
+    padding-top: 136px;
+    padding-bottom: 24px;
 }
 .name-ice-description{
     font-family: "Inter", sans-serif;
@@ -111,7 +190,58 @@ body {
     text-align: left;
     vertical-align: top;
     color: #2D3440;
+    margin: 0;
+    margin-bottom: 48px;
+    width: 414px;
 }
+.name-ice-back{
+    background-repeat: no-repeat;
+    background-color: #FFCBD8;
+    border-radius: 50%;
+    height: 312px;
+    width: 312px;
+    margin: 125px 79px 95px 21px;
+    padding: 100px -6px 95px 0px; 
+}
+.name-ice{
+    margin: 133px 380px 80px 638px;
+    padding: 21px 21px 26px 21px;
+}
+.btn-order{
+    font-family: "Inter", sans-serif;
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: 700;
+    font-style: normal;
+    text-align: central;
+    vertical-align: top;
+    color: #2D3440;
+    background: #FCFCFC;
+    border: 4px solid rgba(252, 252, 252, 0.4);
+    box-shadow: 0px 4px 12px rgba(45, 52, 64, 0.1);
+    border-radius: 26px;
+    margin: 48px 331px 126px 168px;
+}
+/*
+.slide-1::before, .slide-3::after {
+    background-image: url("images/ice-cream-2.png");
+}
+.slide-1::after, .slide-2::before {
+    background-image: url("images/ice-cream-3.png");
+}
+.slide-2::after, .slide-3::before {
+    background-image: url("images/ice-cream-1.png");
+}
+
+.pagination-item-prev{
+    background-image: url("/images/arrow-prew.png");
+    background-repeat: no-repeat;
+}
+.pagination-item-next{
+    background-image: url("/images/arrow-next.png");
+    background-repeat: no-repeat;
+}
+ */
 .gifts-title{
     font-family: "Inter", sans-serif;
     font-size: 32px;
@@ -121,18 +251,28 @@ body {
     text-align: center;
     vertical-align: top;
     color: #2D3440;
+    width: 443px;
+    margin: 0 auto 56px auto;
+}
+.gift-list{
+    justify-content: space-between; 
+    padding: 40px 0 52px 40px;
+    list-style-type: none;
 }
 .gifts-part{
     width: 570px;
     height: 268px;
     background-color: #FF7799;
+    background-repeat: no-repeat;
+    background-size: auto;
+    padding: 40px 0 52px 40px;
     border-radius: 16px;
     text-align-last: left;
 }
 .gifts-part:first-child{
     background-image: url("/images/raspberry.png");
     background-repeat: no-repeat;
-    background-position: 374px 28px;
+    background-position: right 15px bottom;;
 }
 .gifts-part:last-child{
     background-image: url("/images/marshmallow.png");
@@ -148,6 +288,21 @@ body {
     text-align: left;
     vertical-align: top;
     color: #2D3440;
+    margin: 0;
+    margin-bottom: 16px;
+}
+.gifts-description{
+    font-family: "Inter", sans-serif;
+    font-size: 16px;
+    line-height: 22px;
+    font-weight: 400;
+    font-style: normal;
+    text-align: left;
+    vertical-align: top;
+    color: #2D3440;
+    width: 321px;
+    margin: 0;
+    margin-bottom: 43px;
 }
 .btn-gifts{
     font-family: "Inter", sans-serif;
@@ -162,17 +317,9 @@ body {
     background-color: #FCFCFC;
     border-radius: 26px;
 }
-.gifts-description{
-    font-family: "Inter", sans-serif;
-    font-size: 16px;
-    line-height: 22px;
-    font-weight: 400;
-    font-style: normal;
-    text-align: left;
-    vertical-align: top;
-    color: #2D3440;
+.product{
+    list-style-type: none;
 }
-
 .product-title{
     font-family: "Inter", sans-serif;
     font-size: 32px;
@@ -182,6 +329,12 @@ body {
     text-align: center;
     vertical-align: top;
     color: #2D3440;
+    width: 527px;
+    margin: 0 auto;
+    margin-bottom: 107px;
+}
+.product-list{
+    justify-content: space-between;
 }
 .product-card{
     width: 270px;
@@ -189,9 +342,22 @@ body {
     background-color: #FCFCFC;
     border-radius: 8px;
     text-align: center;
+    box-sizing: border-box;
+    margin-bottom: 80px;
+    padding: 133px 40px 28px 40px;
 }
 .product-card-link{
-    text-decoration: none
+    text-decoration: none;
+    position: relative;
+}
+.product-card-image{
+    position: absolute;
+    left: 10px;
+    bottom: 132px;
+    display: block;
+    border-radius: 50%;
+    margin-left: auto;
+    margin-right: auto;
 }
 .product-card-title {
     font-family: "Inter", sans-serif;
@@ -202,6 +368,8 @@ body {
     text-align: center;
     vertical-align: top;
     color: #2D3440;
+    margin: 0;
+    margin-bottom: 8px;
 }
 
 .product-card-description{
@@ -214,6 +382,8 @@ body {
     vertical-align: top;
     text-decoration: none;
     color: #565C66;
+    margin: 0;
+    margin-bottom: 16px;
 }
 .product-card-price{
     font-family: "Inter", sans-serif;
@@ -232,15 +402,21 @@ body {
     border-radius: 26px;
 }
 .advantages{
+    width: 1170px;
+    box-sizing: border-box;
     background-repeat: no-repeat;
     background-image: url("/images/pattern-waffle.png");
     border-radius: 16px;
+    background-size: 100% auto;
+    padding: 24px;
+    margin-bottom: 80px;
 }
 .about_advantages {
     background-color: #FCFCFC;
     border-radius: 16px;
     width: 1122px;
     height: 432px;
+    padding-top: 56px;
 }
 .advantages-title{
     font-family: "Inter", sans-serif;
@@ -250,6 +426,11 @@ body {
     font-style: black;
     text-align: center;
     vertical-align: top;
+    width: 995px;
+    margin: 0 auto 56px auto;
+}
+.advantages-list{
+    flex-wrap: wrap;
 }
 .advantages-point{
     font-family: "Inter", sans-serif;
@@ -261,12 +442,36 @@ body {
     vertical-align: top;
     text-decoration: none;
     color: #565C66;
+    width: 442px;
+    margin-left: 16px;
+}
+.advantages-point-one .advantages-point-three {
+    margin-left: 104px;
+}
+  
+.advantages-point-two .advantages-point-four {
+    margin-left: 94px;
+}
+  
+.advantages-point-one .advantages-point-two {
+    margin-bottom: 40px;
+}
+  
+.advantages-point-three .advantages-point-four {
+    margin-bottom: 56px;
+}
+
+.blog-and-subscription{
+    justify-content: space-between;
+    margin-bottom: 76px;
 }
 .new-post {
     background-image: url("/images/new-post.png");
     width: 570px;
     height: 220px;
     background-repeat: no-repeat;
+    border-radius: 16px;
+    padding: 33px 235PX 63px 32px;
 }
 .new-post-text{
     font-family: "Inter", sans-serif;
@@ -277,6 +482,8 @@ body {
     text-align: left;
     vertical-align: top;
     color: #565C66;
+    margin: 0;
+    margin-bottom: 13px;
 }
 .new-post-link{
     font-family: "Inter", sans-serif;
@@ -285,8 +492,9 @@ body {
     font-weight: 700;
     font-style: bold;
     text-align: left;
-    vertical-align: top;
     color: #2D3440;
+    display: block;
+    width: 303px;
 }
 .mailing{
     background-image: url("/images/mail.png");
@@ -294,12 +502,18 @@ body {
     height: 220px;
     background-repeat: no-repeat;
     border-radius: 16px;
+    background-size: 100% auto;
+    border-radius: 16px;
+    padding: 6px;
 }
 .mailing-list{
     background-color: #FCFCFC;
     border-radius: 16px;
     width: 558px;
     height: 208px;
+    padding: 26px;
+    padding-bottom: 20px;
+    box-sizing: border-box;
 }
 .about-subcription{
     font-family: "Inter", sans-serif;
@@ -310,16 +524,48 @@ body {
     text-align: left;
     vertical-align: top;
     background-color: #FCFCFC;
-    width: 558px;
-    height: 208px;
     color: #565C66;
+    margin: 0;
+    margin-bottom: 42px;
+}
+.subscription-form {
+    align-items: center;
+    justify-content: space-between;
+}
+.subscription_input{
+    width: 332px;
+    height: 48px;
+    margin-right: 17px;
+    padding: 16px 16px;
+    border: 1px solid #B9B9B9;
+    border-radius: 4px;
+}
+.subscription__btn{
+    background-color: #FF2F64;
+    border: 4px solid rgba(255, 47, 100, 0.3);
+    box-shadow: 0px 4px 12px rgba(45, 52, 64, 0.1);
+    border-radius: 26px;
+    position: absolute;
+    width: 152px;
+    height: 44px;
+    color: #FCFCFC;
+}
+.subscription_input::placeholder{
+    font-size: 16px;
+    line-height: 20px;
+    color: #B9B9B9;
 }
 .dilevery{
     background-image: url("/images/background-delivery.png");
-    width: 1170px;
     height: 534px;
     background-repeat: no-repeat;
     border-radius: 16px;
+    padding: 64px;
+    padding-left: 100px;
+    margin-bottom: 80px;
+    box-sizing: border-box;
+    justify-content: space-between;
+    background-size: 100% 100%;
 }
 .dilevery-title{
     font-family: "Inter", sans-serif;
@@ -329,6 +575,8 @@ body {
     font-style: black;
     text-align: left;
     vertical-align: top;
+    width: 356px;
+    margin-bottom: 24px;
 }
 .dilevery-text{
     font-family: "Inter", sans-serif;
@@ -338,12 +586,18 @@ body {
     font-style: regular;
     text-align: left;
     vertical-align: top;
+    width: 371px;
+    margin: 0;
 }
 .dilevery-form{
     background: #FCFCFC;
     border-radius: 8px;
     width: 500px;
     height: 406px;
+    margin-left: 135px;
+    padding: 40px;
+    padding-bottom: 38px;
+    box-sizing: border-box;
 }
 .delevery-info{
     font-family: "Inter", sans-serif;
@@ -353,6 +607,9 @@ body {
     font-style: regular;
     text-align: left;
     vertical-align: top;
+    width: 380px;
+    margin: 0;
+    margin-bottom: 32px;
 }
 .delevery-form-name{
     font-family: "Inter", sans-serif;
@@ -364,25 +621,39 @@ body {
     vertical-align: top;
     color: #2D3440;
 }
+.delivery-btn{
+    background-color: #FF2F64;
+    border: 4px solid rgba(255, 47, 100, 0.3);
+    box-shadow: 0px 4px 12px rgba(45, 52, 64, 0.1);
+    border-radius: 26px;
+    position: absolute;
+    width: 152px;
+    height: 44px;
+    color: #FCFCFC;
+}
 .contacts{
     background-image: url("/images/background-contacts.png");
-    width: 1170px;
     height: 492px;
     background-repeat: no-repeat;
     border-radius: 16px;
+    padding: 64px;
+    padding-right: 0px;
+    box-sizing: border-box;
 }
 .contacts-inner{
     width: 343px;
     height: 364px;
     background: #FCFCFC;
     border-radius: 8px;
+    padding: 40px;
+    padding-bottom: 53px;
 }
 .contacts-text{
     font-family: "Inter", sans-serif;
     font-size: 16px;
     line-height: 22px;
     font-weight: 400;
-    font-style: regular;
+    font-style: normal;
     text-align: left;
     vertical-align: top;
 }
@@ -391,7 +662,7 @@ body {
     font-size: 20px;
     line-height: 24px;
     font-weight: 700;
-    font-style: bold;
+    font-style: normal;
     text-align: left;
     vertical-align: top;
 }
@@ -400,7 +671,7 @@ body {
     font-size: 20px;
     line-height: 24px;
     font-weight: 700;
-    font-style: bold;
+    font-style: normal;
     text-align: left;
     vertical-align: top;
     text-decoration: none;
@@ -423,7 +694,14 @@ body {
     color: #FCFCFC;
     text-decoration: none;
 }
-
+.page-footer{
+    justify-content: space-between;
+    height: 153px;
+}
+.footer-info-inner{
+    margin-top: 48px;
+    margin-bottom: 48px;
+} 
 .footer-info-provider{
     font-family: "Inter", sans-serif;
     font-size: 14px;
@@ -434,6 +712,7 @@ body {
     vertical-align: top;
     color: #2D3440;
     text-decoration: none;
+    margin-left: 24px;
 }
 .footer-info-link{
     font-family: "Inter", sans-serif;
@@ -445,6 +724,7 @@ body {
     vertical-align: top;
     color: #2D3440;
     text-decoration: none;
+    margin-left: 24px;
 }
 .about-text{
     font-family: "Inter", sans-serif;
@@ -455,6 +735,7 @@ body {
     text-align: left;
     vertical-align: top;
     color: #2D3440;
+    margin: 0;
 }
 .htmlacademy-link{
     font-family: "Inter", sans-serif;
