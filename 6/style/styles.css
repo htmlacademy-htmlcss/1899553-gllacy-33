@@ -415,6 +415,7 @@ ul{
 .product{
     margin-bottom: 80px;
     text-align: center;
+    gap: 30px;
 }
 .product-title{
     font-family: "Inter", sans-serif;
@@ -781,17 +782,16 @@ ul{
     display: flex;
     flex-wrap: wrap;
     padding: 48px 29px 40px 19px;
-    border-top: 1px solid rgba(252, 252, 252, 0.3);
 }
 .footer-social{
     display: flex;
     flex-wrap: wrap;
-    margin-right: 323px;
+    margin-right: 300px;
 }
 .footer-info-inner{
     display: grid;
     grid-template-columns: repeat(2, auto);
-    gap: 4px 21px;
+    gap: 8px 24px;
     margin-right: 200px;
 } 
 .footer-heart{
