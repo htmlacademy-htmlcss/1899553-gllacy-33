@@ -68,25 +68,23 @@
                         <form class="navigation-form" action="https://echo.htmlacademy.ru/" method="post">
                             <fieldset class="login">
                                 <legend class="login-title">Личный кабинет</legend>
-                                <label aria-label="введите адрес электронной почты">
+                                <label class="login-label" aria-label="введите адрес электронной почты">
                                     <input class="login-input" type="text" id="mail" name="mail"
                                         placeholder="email@example.com">
                                 </label>
-                                <label aria-label="введите пароль">
+                                <label class="login-label" aria-label="введите пароль">
                                     <input class="login-input" type="text" id="password" name="password"
-                                        placeholder="******">
+                                        placeholder="Пароль">
                                 </label>
-                                <div class="login-inner">
-                                    <button class="btn-login btn btn-pink" type="submit">Войти</button>
-                                    <a class="login-link" href="#">Забыли пароль?</a>
-                                    <a class="login-link" href="#">Регистрация</a>
-                                </div>
+                                <button class="btn-login btn btn-pink" type="submit">Войти</button>
+                                <a class="login-link login-link-password" href="#">Забыли пароль?</a>
+                                <a class="login-link login-link-login" href="#">Регистрация</a>
                             </fieldset>
                         </form>
                     </div>
                 </li>
-                <li class="navigation-item navigation-item-active">
-                    <button class="btn-basket btn-transparent btn" href="#">2 товара</button>
+                <li class="navigation-item navigation-item-active full-basket">
+                    <button class="btn-basket-full btn-transparent btn" href="#">2 товара</button>
                     <div class="navigation-item-inner navigation-form-basket">
                         <p class="basket-text">Корзина</p>
                         <ul class="navigation-basket-list">
@@ -135,14 +133,13 @@
             </ul>
             <h2 class="inner-header-title">Сливочное мороженное</h2>
         </header>
-        <!--завершение хлебные крошки-->
-        <section class="product">
+        <section class="product product-inner">
             <!--начало фильтрация-->
             <h2 class="visually-hidden">Список товаров с фильтрами</h2>
             <form class="catalog-form" action="https://echo.htmlacademy.ru/" method="get">
                 <div class="catalog-filter">
                     <label class="catalog-filter-title">Сортировка:</label>
-                    <!--начало сортировка по-->
+                    <br>
                     <select class="select-control" name="sorting">
                         <option value="popular">по популярности</option>
                         <option value="cheap">по возрастанию</option>
@@ -203,7 +200,7 @@
                 <fieldset class="catalog-filter">
                     <legend class="catalog-filter-title">Наполнители:</legend>
                     <ul class="filler-checkbox">
-                        <li class="filler-checkbox-item">
+                        <li class="filler-checkbox-item filler-checkbox-item-checkbox">
                             <label class="filler-checkbox-control">
                                 <input class="filler-control-input" type="checkbox" name="filler-content"
                                     value="chocolate" checked>
@@ -434,34 +431,33 @@
                         <span class="visually-hidden">Следующая страница</span>
                     </a>
                 </li>
-                </ul>
-                <!--завершение сраницы-->
-                </section>
-                <!--завершение фильтрация-->
+            </ul>
+            <!--завершение сраницы-->
+            </section>
+            <!--завершение фильтрация-->
     </main>
     <footer class="page-footer general-layout">
         <!--начало футера-->
-        <ul class="footer-social">
+        <ul class="footer-social footer-social-footer">
             <li class="footer-social-item">
-                <a class="footer-social-link footer-social-vk btn" href="">
+                <a class="footer-social-link footer-social-vk btn" href="https://vk.com/htmlacademy">
                     <span class="visually-hidden">ВКонтакте</span>
                 </a>
             </li>
             <li class="footer-social-item">
-                <a class="footer-social-link footer-social-fb btn" href="">
+                <a class="footer-social-link footer-social-fb btn" href="https://www.facebook.com/htmlacademy">
                     <span class="visually-hidden">Фейсбук</span>
                 </a>
             </li>
             <li class="footer-social-item">
-                <a class="footer-social-link footer-social-insta btn" href="">
+                <a class="footer-social-link footer-social-insta btn" href="https://www.instagram.com/htmlacademy/">
                     <span class="visually-hidden">Инстаграм</span>
                 </a>
             </li>
         </ul>
         <ul class="footer-info-inner">
             <li class="footer-info-item">
-                <img class="footer-heart" src="images/heart.svg" width="14" height="12" alt="Сердце">
-                <a class="footer-info-provider" href="#">Для поставщиков</a>
+                <a class="footer-info-provider footer-heart" href="#">Для поставщиков</a>
             </li>
             <li class="footer-info-item">
                 <a class="footer-info-link" href="#">Наши документы</a>
@@ -480,7 +476,6 @@
                 © 2021
             </p>
         </div>
-        <!--завершение лого академии-->
     </footer>
     <!--завершение футера-->
 </body>
