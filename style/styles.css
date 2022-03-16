@@ -195,7 +195,7 @@ fieldset {
 .navigation-ctlg{
     left: 0;
     top: 100%;
-    padding-bottom: 16px;
+    padding-bottom: 10px;
     white-space: nowrap;
 }
 .navigation-item-inner{
@@ -272,10 +272,12 @@ fieldset {
     padding: 24px 16px;
 }
 .navigation-item-input{
-    min-width: 324px;
-    padding: 14px 16px;
+    min-width: 320px;
+    padding: 14px 20px;
     border: 1px solid #B9B9B9;
     border-radius: 4px;
+    font-size: 16px;
+    color: #B9B9B9;
 }
 .btn-enter{
     font-family: "Inter", sans-serif;
@@ -295,7 +297,7 @@ fieldset {
 .navigation-form-enter{
     top: calc(100% + 8px);
     right: 0;
-    min-width: 420px;
+    min-width: 322px;
     padding: 48px 48px 52px; 
 }
 .login{
@@ -316,11 +318,13 @@ fieldset {
     grid-column: 1 / -1;
 }
 .login-input{
-    min-width: 324px;
+    min-width: 292px;
     margin-bottom: 16px;
     padding: 14px 16px;
     border: 1px solid #B9B9B9;
     border-radius: 4px;
+    font-size: 16px;
+    color: #B9B9B9;
 }
 .btn-login{
     padding: 12px 32px;
@@ -364,10 +368,10 @@ fieldset {
     background-position: 18px;
 }
 .navigation-form-basket{
-    right: 0;
-    top: calc(100% + 8px);
-    min-width: 441px;
-    padding: 48px;
+    right: 0px;
+    top: 41px;
+    min-width: 344px;
+    padding: 50px
 }
 .basket-text{
     padding: 0 10px;
@@ -416,7 +420,7 @@ fieldset {
     color: #B9B9B9;
 }
 .goods-price{
-    margin-left: auto;
+    margin-left: 26px;
     font-size: 18px;
     line-height: 22px;
     font-weight: 700;
