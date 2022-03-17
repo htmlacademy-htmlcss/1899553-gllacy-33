@@ -7,14 +7,9 @@
   <link rel="stylesheet" href="styles/styles.css">
   <link rel="icon" href="images/favicon.ico" sizes="32x32">
   <base href="https://kuznetsovaleksandra.github.io/1899553-gllacy-33/">
-  <style>
-    a:active {
-      color: #FEAFC3;
-    }
-  </style>
 </head>
 
-<body>
+<body class="body-pink">
   <header class="page-header general-layout">
     <!-- начало хедера-->
     <a class="navigation-logo" href="index.html">
@@ -159,24 +154,36 @@
       <footer class="footer-of-slider">
         <ol class="pagination-mini">
           <li class="pagination-mini-item">
-            <button class="pagination-link pagination-active btn"></button>
+            <button class="pagination-link pagination-active btn">
+              <span class="visually-hidden">выбран первый вкус мороженого</span>
+            </button>
           </li>
           <li class="pagination-mini-item">
-            <button class="pagination-link btn"></button>
+            <button class="pagination-link btn">
+              <span class="visually-hidden">выбран второй вкус мороженого</span>
+            </button>
           </li>
           <li class="pagination-mini-item">
-            <button class="pagination-link btn"></button>
+            <button class="pagination-link btn">
+              <span class="visually-hidden">выбран третий вкус мороженого</span>
+            </button>
           </li>
         </ol>
         <ul class="footer-social-list">
           <li class="footer-social-item">
-            <a class="footer-social-link footer-social-vk btn" href="https://vk.com/htmlacademy"></a>
+            <a class="footer-social-link footer-social-vk btn" href="https://vk.com/htmlacademy">
+              <span class="visually-hidden">Магазин Глейси в вконтакте</span>
+            </a>
           </li>
           <li class="footer-social-item">
-            <a class="footer-social-link footer-social-fb btn" href="https://www.facebook.com/htmlacademy"></a>
+            <a class="footer-social-link footer-social-fb btn" href="https://www.facebook.com/htmlacademy">
+              <span class="visually-hidden">Магазин Глейси в фэйсбук</span>
+            </a>
           </li>
           <li class="footer-social-item">
-            <a class="footer-social-link footer-social-insta btn" href="https://www.instagram.com/htmlacademy/"></a>
+            <a class="footer-social-link footer-social-insta btn" href="https://www.instagram.com/htmlacademy/">
+              <span class="visually-hidden">Магазин Глейси в инстаграм</span>
+            </a>
           </li>
         </ul>
       </footer>
@@ -213,7 +220,7 @@
           </a>
           <div class="footer-of-card">
             <b class="product-card-price">310 ₽/кг</b>
-            <button class="product-card-button btn">
+            <button class="product-card-button btn-pink btn">
               <span class="visually-hidden">Добавить в корзину</span>
             </button>
           </div>
@@ -226,7 +233,7 @@
           </a>
           <div class="footer-of-card">
             <b class="product-card-price">340 ₽/кг</b>
-            <button class="product-card-button btn">
+            <button class="product-card-button btn-pink btn">
               <span class="visually-hidden">Добавить в корзину</span>
             </button>
           </div>
@@ -239,7 +246,7 @@
           </a>
           <div class="footer-of-card">
             <b class="product-card-price">330 ₽/кг</b>
-            <button class="product-card-button btn">
+            <button class="product-card-button btn-pink btn">
               <span class="visually-hidden">Добавить в корзину</span>
             </button>
           </div>
@@ -252,7 +259,7 @@
           </a>
           <div class="footer-of-card">
             <b class="product-card-price">320 ₽/кг</b>
-            <button class="product-card-button btn">
+            <button class="product-card-button btn-pink btn">
               <span class="visually-hidden">Добавить в корзину</span>
             </button>
           </div>
@@ -295,8 +302,7 @@
         <h2 class="visually-hidden">Подписка на рассылку</h2>
         <div class="mailing-list">
           <p class="about-subcription">Подпишитесь на нашу сладкую рассылку и будьте всегда <br>в курсе всего самого
-            вкусного,
-            что у нас происходит. Обещаем <br>не спамить и не слать всякой ненужной ерунды. Честно =)</p>
+            вкусного, что у нас происходит. Обещаем <br>не спамить и не слать всякой ненужной ерунды. Честно =)</p>
           <form class="subcription-form" action="https://echo.htmlacademy.ru/" method="post">
             <label aria-label="Введитите адрес электронной почты">
               <input class="subscription-input" type="email" id="subcription-email" name="subcription-email"
@@ -374,7 +380,7 @@
             <label aria-label="введите комментарий по необходимости">
               <textarea class="modal-window-input window-text" name="text" placeholder="В свободной форме"></textarea>
             </label>
-            <button class="modal-window-btn btn btn-pink" type="submit">Отправить</button>
+            <button class="modal-window-btn btn-pink btn" type="submit">Отправить</button>
           </fieldset>
         </form>
       </div>

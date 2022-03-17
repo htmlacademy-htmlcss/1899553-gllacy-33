@@ -30,11 +30,20 @@ body {
     font-weight: 400;
     background-color: #FEAFC3;
     color: #2D3440; 
-    
     display: flex;
     flex-direction: column;
     min-height: 100%;
     margin: 0;
+}
+.body-pink{
+    background-color: #FEAFC3;
+}
+.body-blue {
+    background-color: #69A9FF;
+}
+  
+  .body-yellow {
+    background-color: #FCC850;
 }
 h1, h2, h3, p {
     margin: 0;
@@ -95,7 +104,7 @@ fieldset {
     background-color: rgba(252, 252, 252, 0.5);
 }
   
-.btn-transparent:focus {
+.btn-transparent:focus, .btn-transparent:focus-visible {
     background-color: rgba(252, 252, 252, 0.5);
     outline: 2px solid #2D3440;
 }
@@ -119,6 +128,23 @@ fieldset {
     border: 4px solid rgba(252, 252, 252, 0.4);
     box-shadow: 0px 4px 12px rgba(45, 52, 64, 0.1);
  }
+.btn-white:hover {
+    background-color: rgba(252, 252, 252, 0.4);
+    outline-color: #FCFCFC;
+}
+ .btn-white:focus-visible, .btn-white:focus {
+    background-color: rgba(252, 252, 252, 0.5);
+    outline: 2px solid #2D3440;
+}
+.btn-white:active{
+    background-color: rgba(252, 252, 252, 1);
+}
+.btn-white:disabled {
+    background: #E7E7E7;
+    outline-color: rgba(252, 252, 252, 0.4);
+    color: #B9B9B9;
+    font-weight: 400;
+}
 .btn-pink{
     color: #FCFCFC;
     font-weight: 700;
@@ -401,8 +427,6 @@ fieldset {
 .goods-img{
     margin-right: 16px;
     border-radius: 50%;
-    width: 46px;
-    height: 46px;
 }
 .goods-info{
     display: flex;
@@ -540,12 +564,28 @@ fieldset {
 .pagination-item-prev{
     left: -20px;
     background-color: rgba(252, 252, 252, 0.3);
-    background-image: url("../images/arrow-prev.png") 
+    background-image: url("../images/arrow-prev.png");
+}
+.pagination-item-prev:focus-visible, .pagination-item-prev:focus{
+    background-color: #FCFCFC;
+    background-image: url("../images/foot-arrow-prev.svg");
+}
+.pagination-item-prev:hover{
+    background-color: #FCFCFC;
+    background-image: url("../images/foot-arrow-prev.svg");
 }
 .pagination-item-next{
     right: -25px;
     background-color: rgba(252, 252, 252, 0.3);
     background-image: url("../images/arrow-next.png")
+}
+.pagination-item-next:focus-visible, .pagination-item-next:focus{
+    background-color: #FCFCFC;
+    background-image: url("../images/foot-arrow-next.svg");
+}
+.pagination-item-next:hover{
+    background-color: #FCFCFC;
+    background-image: url("../images/foot-arrow-next.svg");
 }
 .footer-of-slider{
     display: flex;
@@ -569,6 +609,12 @@ fieldset {
 .pagination-active{
     background-color: #FCFCFC;
 }
+.pagination-link:hover{
+    outline: 1px solid #FCFCFC; 
+}
+.pagination-link:focus-visible, .pagination-link:focus {
+    outline: 1px solid #2D3440;
+}
 .footer-social-list{
     display: flex;
     flex-wrap: wrap;
@@ -583,6 +629,14 @@ fieldset {
     outline: 2px solid rgba(252, 252, 252, 0.2);
     background-position: center;
     box-shadow: 0 4px 12px 1px rgb(45 52 64 / 10%);
+}
+.footer-social-link:hover {
+    outline: 2px solid rgba(252, 252, 252, 0.2);
+    background-color: #2D3440;
+}
+  
+.footer-social-link:focus-visible, .footer-social-link:focus {
+    background-color: #2D3440;
 }
 .footer-social-vk{
     background-image:url("../images/vk.svg")
@@ -744,7 +798,7 @@ fieldset {
     background-image: url("../images/pattern-waffle.png");
     background-repeat: no-repeat;
     padding: 24px;
-    margin-bottom: 52px;
+    margin-bottom: 80px;
     border-radius: 16px;
     background-size: cover;
 }
@@ -799,7 +853,7 @@ fieldset {
 .blog-and-subscription{
     display: flex;
     justify-content: space-between;
-    margin-bottom: 50px;
+    margin-bottom: 76px;
     flex-wrap: wrap;
 }
 .new-post {
@@ -808,8 +862,8 @@ fieldset {
     background-repeat: no-repeat;
     background-position: center;
     border-radius: 16px;
-    padding: 58px 235px 90px 32px;
-    background-size: auto;
+    padding: 32px 235px 32px 32px;
+    background-size: cover;
     box-sizing: border-box;
 }
 .new-post-text{
@@ -833,20 +887,19 @@ fieldset {
     min-height: 220px;
     background-image: url("../images/mail.png");
     background-repeat: no-repeat;
-    background-size: 100% auto;
+    background-size: cover;
     border-radius: 16px;
     background-position: center;
     padding: 6px;
 }
 .mailing-list{
     padding: 26px;
-    width: 504px;
-    height: auto;
+    width: 556px;
+    height: 100%;
     background-color: #FCFCFC;
     border-radius: 16px;
     margin: 0 auto;
-    margin-top: 27px;
-
+    box-sizing: border-box;
 }
 .about-subcription{
     color: #565C66;
@@ -994,11 +1047,15 @@ fieldset {
     justify-self: center;
 }
 .contacts{
+    box-sizing: border-box;
+    padding: 64px;
+    padding-right: 0;
     background-image: url("../images/background-contacts.png");
     background-repeat: no-repeat;
+    background-position: center;
     border-radius: 16px;
-    padding: 64px;
     background-size: cover;
+    height: 492px;
 }
 .contacts-inner{
     width: 262px;
@@ -1024,18 +1081,18 @@ fieldset {
     line-height: 24px;
     font-weight: 700;
     text-decoration: none;
-    color: #2D3440
+    color: #2D3440;
+    margin-bottom: 24px;
 }
 .contacts-time{
+    margin: 0;
+    margin-bottom: 42px;
     font-size: 14px;
     line-height: 20px;
-    margin-bottom: 32px;
+    font-weight: 400;
 }
 .feedback-btn{
-    padding-top: 13px;
-    padding-right: 32px;
-    padding-bottom: 13px;
-    padding-left: 32px
+    padding: 11px 32px;
 }
 .modal:target{
     display: flex;
@@ -1291,6 +1348,18 @@ fieldset {
     border-radius: 50%;
     cursor: pointer;
 }
+.range-toggle:hover {
+    border-color: #FFFFFF;
+    background: #242424;
+} 
+.range-toggle:active {
+    background: #242424;
+    border: none;
+}
+  
+.range-toggle:focus-visible {
+    outline: 2px solid #242424;
+}
 .toggle-min{
     top: -6px;
     left: -10px;
@@ -1437,6 +1506,15 @@ fieldset {
 }
 .pagination-current, .footer-pagination-link:active{
     background: #FCFCFC;
+}
+.footer-pagination-link:hover {
+    outline: 1px solid #FCFCFC;
+    background-color: rgba(252, 252, 252, 0.3);
+}
+  
+.footer-pagination-link:focus-visible, .footer-pagination-link:focus {
+    outline: 1px solid #2D3440;
+    background-color: rgba(252, 252, 252, 0.3);
 }
 .footer-pagination-next{
     background-image: url("../images/foot-arrow-next.svg");
