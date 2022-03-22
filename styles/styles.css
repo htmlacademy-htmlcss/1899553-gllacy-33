@@ -288,7 +288,7 @@ input:disabled {
     color: #2D3440;
 }
 .navigation-ctlg .active{
-    width: 30px;
+    width: 106px;
     background-color: #FF4A78;
     color: #fcfcfc;
 }
@@ -1525,7 +1525,7 @@ input:disabled {
 .filler-checkbox-item-checkbox:hover .filler-control-type {
     background-image: url("../images/checkbox-white.svg");
 }
-.filler-checkbox-item-checkbox:hover:checked+.filler-control-type {
+.filler-checkbox-item-checkbox:checked:hover .filler-control-type {
     background-image: url("../images/checkbox-on-white.svg");
 }
 .filler-checkbox-item-checkbox:not(:last-child){
