@@ -65,7 +65,7 @@
               <fieldset class="login">
                 <legend class="login-title">Личный кабинет</legend>
                 <label class="login-label" aria-label="введите адрес электронной почты">
-                  <input class="login-input" type="text" id="mail" name="mail" placeholder="email@example.com">
+                  <input class="login-input" type="text" id="mail" name="mail" placeholder="email@example.com" required>
                 </label>
                 <label class="login-label" aria-label="введите пароль">
                   <input class="login-input" type="text" id="password" name="password" placeholder="Пароль">
@@ -306,7 +306,7 @@
           <form class="subcription-form" action="https://echo.htmlacademy.ru/" method="post">
             <label aria-label="Введитите адрес электронной почты">
               <input class="subscription-input" type="email" id="subcription-email" name="subcription-email"
-                placeholder="email@example.com">
+                placeholder="email@example.com" required>
             </label>
             <button class="subscription-btn btn-pink btn" type="submit">Отправить</button>
           </form>
@@ -330,12 +330,12 @@
               <span class="delivery-form-tooltiptext">Введите планируемую дату доставки</span>
             </button>
             <input class="delivery-form-input" type="text" name="delivery-date" id="delivery-date"
-              placeholder="01.04.2020">
+              placeholder="01.04.2020" required>
           </div>
           <label class="delivery-form-name delivery-form-phone">
             Телефон
             <input class="delivery-form-input" type="text" name="delevery-phone" id="delivery-phone"
-              placeholder="+7 800 999-00-00">
+              placeholder="+7 800 999-00-00" required>
           </label>
           <div class="delivery-form-name delivery-form-adress">
             <label for="delivery-adress">Адрес</label>
@@ -343,7 +343,7 @@
               <span class="delivery-form-tooltiptext">Введите название улицы, дома и квартиры</span>
             </button>
             <input class="delivery-form-input" type="text" name="delivery-adress" id="delivery-adress"
-              placeholder="ул. Большая Конюшенная, 19/8">
+              placeholder="ул. Большая Конюшенная, 19/8" required>
           </div>
           <button class="delivery-btn btn-pink btn" type="submit">Отправить</button>
         </fieldset>
@@ -372,10 +372,10 @@
           <fieldset class="modal-window-inner">
             <legend class="modal-window-title">Мы обязательно ответим вам!</legend>
             <label aria-label="введите свои фамилию и имя">
-              <input class="modal-window-input" type="text" name="name" placeholder="Имя и фамилия">
+              <input class="modal-window-input" type="text" name="name" placeholder="Имя и фамилия" required>
             </label>
             <label aria-label="введите адрес электронной почты">
-              <input class="modal-window-input" type="email" name="mail" placeholder="email@example.com">
+              <input class="modal-window-input" type="email" name="mail" placeholder="email@example.com" required>
             </label>
             <label aria-label="введите комментарий по необходимости">
               <textarea class="modal-window-input window-text" name="text" placeholder="В свободной форме"></textarea>
