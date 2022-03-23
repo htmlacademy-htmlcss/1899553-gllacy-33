@@ -280,6 +280,7 @@ input:disabled {
 }
 .navigation-in-ctlg-item:not(:first-child):hover{
     background-color: #FFCBD8;
+    color: #2D3440;
 }
 .navigation-in-ctlg-item:not(:first-child):active{
     background-color: #FF7799;
