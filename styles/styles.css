@@ -280,7 +280,6 @@ input:disabled {
 }
 .navigation-in-ctlg-item:not(:first-child):hover{
     background-color: #FFCBD8;
-    color: #2D3440;
 }
 .navigation-in-ctlg-item:not(:first-child):active{
     background-color: #FF7799;
@@ -507,7 +506,7 @@ input:disabled {
 
 .gallery{
     position: relative;
-    margin-bottom: 75px; 
+    margin-bottom: 70px; 
 }
 .all-slidders{
     display: flex;
@@ -699,7 +698,7 @@ input:disabled {
     background-image:url("../images/insta.svg")
 }
 .gifts{
-    margin-bottom: 75px;
+    margin-bottom: 83px;
     text-align: center;
 }
 .gifts-title{
@@ -722,7 +721,7 @@ input:disabled {
 .gifts-part:first-child{
     background-image: url("../images/raspberry.png");
     background-repeat: no-repeat;
-    background-position: 374px bottom;;
+    background-position: 374px 30px;
 }
 .gifts-part:last-child{
     background-image: url("../images/marshmallow.png");
@@ -1134,7 +1133,7 @@ input:disabled {
     width: 262px;
     background: #FCFCFC;
     border-radius: 8px;
-    padding: 40px;
+    padding: 41px 41px 53px;
     box-shadow: 0px 8px 16px rgb(45 52 64 / 12%);
 }
 .contacts-inner-info{
