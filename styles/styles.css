@@ -664,6 +664,9 @@ input:disabled {
 .footer-social-list{
     display: flex;
     flex-wrap: wrap;
+    position: relative;
+    top: -4px;
+    left: 4px;
 }
 .footer-social-item:not(:last-child){
     margin-right: 14px;
